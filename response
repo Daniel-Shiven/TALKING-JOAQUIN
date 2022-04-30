@@ -1,0 +1,155 @@
+#-------Functions for Convo-------#
+import random
+
+
+def ran():
+  resp = ("\033[0;32;40mJoaquin: hello there",
+         "\033[0;32;40mJoaquin: bruh",
+         "\033[0;32;40mJoaquin: die",
+         "\033[0;32;40mJoaquin: ratio",
+         "\033[0;32;40mJoaquin: counter ratio",
+         "\033[0;32;40mJoaquin: YES",
+         "\033[0;32;40mJoaquin: yes",
+         "\033[0;32;40mJoaquin: no",
+         "\033[0;32;40mJoaquin: NO",
+         "\033[0;32;40mJoaquin: I think that's illegal",
+         "\033[0;32;40mJoaquin: I like boys",
+         "\033[0;32;40mJoaquin: I like women",
+         "\033[0;32;40mJoaquin: Gerardo is bad",
+         "\033[0;32;40mJoaquin: I am a sexy man")
+  print(random.choice(resp))
+
+  
+#-----Introduction-----#
+def intro():
+  resp = ("\033[0;32;40mJoaquin: Hi I'm JOAQUIN",
+         "\033[0;32;40mJoaquin: Hi I'm the very only good-looking JOAQUIN",
+         "\033[0;32;40mJoaquin: Hi I am from Israel. Where are you from?",
+         "\033[0;32;40mJoaquin: I have curly hair. How about you?",
+         "\033[0;32;40mJoaquin: I LIKE women",
+         "\033[0;32;40mJoaquin: I have white skin",
+         "\033[0;32;40mJoaquin: I have very dark brown eyes, which are definetely not black",
+         "\033[0;32;40mJoaquin: Hi I like computer science",
+         "\033[0;32;40mJoaquin: I like animals. Do you?",
+         "\033[0;32;40mJoaquin: Do you like Israel?")
+  print(random.choice(resp))
+
+#-----Curly-----#
+def curly():
+  resp = ("\033[0;32;40mJoaquin: I like curly hair",
+         "\033[0;32;40mJoaquin: Ooh curly hair is cute",
+         "\033[0;32;40mJoaquin: I like your hair",
+         "\033[0;32;40mJoaquin: I am pleased with your hair",
+         "\033[0;32;40mJoaquin: My hair is the best")
+  print(random.choice(resp))
+  
+#-----Hello-----#
+def hello():
+  resp = ("\033[0;32;40mJoaquin: no one says hello anymore",
+         "\033[0;32;40mJoaquin: stop saying hello",
+         "\033[0;32;40mJoaquin: why are you still saying hello bruh")
+  print(random.choice(resp))
+
+#-----Taco-----#
+def taco():
+  resp = ("\033[0;32;40mJoaquin: tacos are cool",
+         "\033[0;32;40mJoaquin: Do you want to make a taco with me? hee hee",
+         "\033[0;32;40mJoaquin: tacos are mid")
+  print(random.choice(resp))
+
+#-----Ecuador-----#
+def ecuador1():
+  print("\033[0;32;40mJoaquin: You've said the magic word. IM NOT FROM ISRAEL, IM FROM ECUADOR HAHHAHAHAHA")
+
+
+#-----How are you-----#
+def wsp():
+  resp = ("\033[0;32;40mJoaquin: I'm good",
+         "\033[0;32;40mJoaquin: I am tired",
+         "\033[0;32;40mJoaquin: my life is lucky",
+         "\033[0;32;40mJoaquin: I'm sad",
+         "\033[0;32;40mJoaquin: life is very noice",
+         "\033[0;32;40mJoaquin: are YOU good?",
+         "\033[0;32;40mJoaquin: I am upset")
+  print(random.choice(resp))
+  
+#-----Israel-----#
+def israel():
+  resp = ("\033[0;32;40mJoaquin: I am from Israel",
+         "\033[0;32;40mJoaquin: I am Jewish",
+         "\033[0;32;40mJoaquin: I love Israel",
+         "\033[0;32;40mJoaquin: Israel is the greatest",
+         "\033[0;32;40mJoaquin: I love being Jewish",
+         "\033[0;32;40mJoaquin: Jewish people are cool",
+         "\033[0;32;40mJoaquin: I have Jewish hair",
+         "\033[0;32;40mJoaquin: grrr")
+  print(random.choice(resp))
+
+#-----Ok-----#
+def ok():
+  resp = ("\033[0;32;40mJoaquin: why you saying ok?",
+         "\033[0;32;40mJoaquin: stop saying ok",
+         "\033[0;32;40mJoaquin: please stop saying ok",
+         "\033[0;32;40mJoaquin: omg stop saying ok",
+         "\033[0;32;40mJoaquin: ok is cringe",
+         "\033[0;32;40mJoaquin: ratio",
+         "\033[0;32;40mJoaquin: counter ratio")
+  print(random.choice(resp))
+  
+#-----Drug-----#
+def drug():
+  resp = ("\033[0;32;40mJoaquin: drugs are bad",
+         "\033[0;32;40mJoaquin: don't take drugs kids",
+         "\033[0;32;40mJoaquin: ratio",
+         "\033[0;32;40mJoaquin: counter ratio")
+  print(random.choice(resp))
+
+#-----Mom-----#
+def mom():
+  resp = ("\033[0;32;40mJoaquin: My mother is the best",
+         "\033[0;32;40mJoaquin: your mom",
+         "\033[0;32;40mJoaquin: no ur mom",
+         "\033[0;32;40mJoaquin: my mom!!",
+         "\033[0;32;40mJoaquin: MOTHERINNIT",
+         "\033[0;32;40mJoaquin: mum is great",
+         "\033[0;32;40mJoaquin: my mom is better")
+  print(random.choice(resp))
+
+#-----Yes-----#
+def yes():
+  resp = ("\033[0;32;40mJoaquin: YESSIR",
+         "\033[0;32;40mJoaquin: stop saying yes",
+         "\033[0;32;40mJoaquin: yes very cool",
+         "\033[0;32;40mJoaquin: Ok then...",
+         "\033[0;32;40mJoaquin: ratio",
+         "\033[0;32;40mJoaquin: counter ratio",
+         "\033[0;32;40mJoaquin: yes")
+  print(random.choice(resp))
+  
+#-----Shut-----#
+def shut():
+  resp = ("\033[0;32;40mJoaquin: YOU shut up!",
+         "\033[0;32;40mJoaquin: shut yo trap",
+         "\033[0;32;40mJoaquin: shut.",
+         "\033[0;32;40mJoaquin: why you so agro?",
+         "\033[0;32;40mJoaquin: ratio",
+         "\033[0;32;40mJoaquin: counter ratio")
+  print(random.choice(resp))
+  
+#-----Phone-----#
+def phone():
+  resp = ("\033[0;32;40mJoaquin: apple iphones are the best",
+         "\033[0;32;40mJoaquin: samasung and android are lowkey kinda bad",
+         "\033[0;32;40mJoaquin: I love iphones!",
+         "\033[0;32;40mJoaquin: I broke a phone with a hammer one time",
+         "\033[0;32;40mJoaquin: phones. SIUUUUUU")
+  print(random.choice(resp))
+
+#-----Men-----#
+def men():
+  resp = ("\033[0;32;40mJoaquin: I like men a lot!",
+         "\033[0;32;40mJoaquin: men are equal to women",
+         "\033[0;32;40mJoaquin: chillin' with the boys is the best",
+         "\033[0;32;40mJoaquin: boys are lowkey subpar",
+         "\033[0;32;40mJoaquin: alpha male.")
+  print(random.choice(resp))
