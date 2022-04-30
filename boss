@@ -1,0 +1,77 @@
+#-------PACKETS------#
+import replit
+import random
+from random import *
+import time
+
+
+
+#---------BOSS FIGHT---------#
+def bossfight(boss,name,diff,health,strength,armor,low,high):
+  name = name
+  boss = boss
+  diff = diff
+  health = health
+  times = 0
+  damage = 0
+  defense = armor
+  
+  while 0 == 0:
+    damage = 0
+    times = times + 1
+    replit.clear()
+    print("|------- \033[0;36;40mBOSS FIGHT",diff,"\033[0;37;40m-------|\n")
+
+    if defense != armor:
+      defense = defense - 1
+    
+    print(name,"\033[0;35;40mHealth:\033[0;35;40m",
+        boss,
+         "\033[0;36;40m\n\nJoaquin \033[0;35;40mHealth:\033[0;35;40m",health)
+    
+    print("\033[0;37;40m\nWhat do you want to do?\n\033[0;31;40m(1) - Attack \n\033[0;32;40m(2) - Defend\033[0;37;40m")
+    while 0 == 0:
+      action = input("Pick: ")
+      if action == "1" or action == "2":
+        break
+
+
+    #-----ATTACK1-----#
+    if action == "1":
+      battle = randint(3,6)
+      damage = battle+strength
+      boss = boss - damage
+    print("\nJoaquin did\033[0;31;40m",damage,"damage\033[0;37;40m")
+
+    #-----DEFEND1-----#
+    if action == "2":
+      add = randint(2,4)
+      if defense < 7:
+        defense = defense+add
+    print("Joaquin has a \033[0;32;40mdefense of",defense)
+
+    #-----BOSS ATTACK1-----#
+    damage = randint(low,high)
+    damage = damage - defense
+    if damage < 1:
+      damage = 1
+    health = health - damage
+    print("\033[0;37;40m\nThe boss did\033[0;31;40m",damage,"damage\033[0;37;40m")
+
+    input("\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to continue")
+    
+
+    if boss < 0 or boss == 0:
+      replit.clear()
+      print("\033[1;32;40mYou WON!")
+      victory = 1
+      time.sleep(2)
+      break
+    elif health < 0 or health == 0:
+      replit.clear()
+      print("\033[1;31;40mYou LOST L")
+      victory = 0
+      time.sleep(2)
+      break
+      
+  return(victory)
