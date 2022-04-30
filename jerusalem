@@ -1,0 +1,160 @@
+import time
+import sys
+import replit
+import random
+from random import *
+from boss import *
+
+def jerusalem(strength,armor,boss1,achieve,health,im,pb,deport):
+  line1 = "You go to Jerusalem\n"
+
+  print("\033[0;37;40mYou see a bunch of stuff: \n\n\033[0;34;40m(1) - \033[0;37;40mThe Western Wall \n\033[0;34;40m(2) - \033[0;37;40mFood Market \n\033[0;34;40m(3) - \033[0;37;40mPolice Station\n")
+
+  while 0 == 0:
+    answer = input("Where will you go?\033[0;34;40m ")
+    if answer == "1" or answer == "2" or answer == "3":
+      break
+
+  if answer == "1":
+    replit.clear()
+
+    print("\033[0;37;40mYou approach the western wall\n")
+
+    time.sleep(1)
+
+    print("Joaquin pulls out a spray can\n")
+
+    time.sleep(1)
+
+    print("What will you paint?\n\033[0;34;40m(1) - \033[0;37;40mSomething Mean \n\033[0;34;40m(2) - \033[0;37;40mSomething Nice \n\033[0;34;40m(3) - \033[0;37;40mSomething Wholesome\n")
+
+    
+    while 0 == 0:
+      answer2 = input("Choose:\033[0;34;40m ")
+      if answer2 == "1" or answer2 == "2" or answer2 == "3":
+        break
+        
+    replit.clear()
+    line1 = "\033[0;37;40mThe \033[0;31;40mIsraeli police\033[0;37;40m see you...\n\n" 
+    for x in line1:
+      print(x, end='')
+      sys.stdout.flush()
+      time.sleep(.075)
+
+    time.sleep(1)
+            
+    
+    if answer2 == "1":
+      print("You get arrested for painting a curse word\n")
+
+      time.sleep(1)
+      
+      print("You and Joaquin get deported L")
+
+      deport = deport + 1
+      if deport == 1:
+        achieve = achieve + 1
+        print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Get Deported\n")
+      
+      time.sleep(1)
+
+    if answer2 == "2":
+      print("The Israeli police laugh and pat you on the back\nfor painting an ice cream cone\n")
+
+      time.sleep(1)
+      
+      print("You and Joaquin get free Israeli merch\n")
+
+      time.sleep(1)
+
+      im = im + 1
+      if im == 1:
+        print("\033[0;36;40mITEM OBTAIN: Israeli Merch!")
+      
+
+    if answer2 == "3":
+      print("You get arrested for painting something wholesome\non Israeli infrastructure")
+
+      time.sleep(1)
+      
+      print("You and Joaquin get deported L")
+
+      deport = deport + 1
+      if deport == 1:
+        achieve = achieve + 1
+        print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Get Deported")
+      
+    input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+
+#---------Market---------#
+  
+  if answer == "2":
+    replit.clear()
+    print("\033[0;37;40mYou approach the market\n")
+
+    time.sleep(1)
+    
+    print("You eat Jewish food\n")
+
+    time.sleep(1)
+    
+    print("You get constipated\n")
+
+    time.sleep(1)
+    
+    print("You are deported because you poop in the market")
+
+    deport = deport + 1
+    if deport == 1:
+      achieve = achieve + 1
+      print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Get Deported")
+    
+    time.sleep(1)
+    
+    input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+
+      
+#---------Police Station---------#
+  
+  if answer == "3":
+    replit.clear()
+    
+    print("\033[0;37;40mYou approach the \033[0;31;40mIsraeli police\033[0;37;40m station\n")
+    
+    time.sleep(1.5)
+    
+    print("A police officer challenges Joaquin")
+
+    input("\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to continue")
+    
+    replit.clear()
+    line1 = "|------- BOSS FIGHT (Difficulty: 1) -------|" 
+    for x in line1:
+      print(x, end='')
+      sys.stdout.flush()
+      time.sleep(.075)
+    replit.clear()
+
+    
+
+#---------BOSS FIGHT---------#
+    boss = 25
+    low = 4
+    high = 7
+    name = "\033[0;36;40mIsraeli Police Officer"
+    diff = "\033[0;36;40m(Difficulty: 1)"
+    victory = bossfight(boss,name,diff,health,strength,armor,low,high)
+    if victory == 1:
+      boss1 = boss1 + 1
+      if boss1 == 1:
+        achieve = achieve + 1
+        print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Beat Boss #1")
+      
+      pb = pb + 1
+      if pb == 1:
+        print("\033[0;36;40m\nITEM OBTAIN: Papa Baton")
+        time.sleep(2.5)
+      
+    input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+      
+  return(boss1,achieve,im,pb,deport)
