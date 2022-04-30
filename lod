@@ -1,0 +1,26 @@
+import time
+import sys
+
+def lodv(lod,achieve):
+  
+  print("\033[0;37;40mYou go to Lod\n")
+
+  time.sleep(1)
+  
+  print("There is absolutely nothing to do in Lod\n")
+
+  time.sleep(1)
+  
+  print("You leave due to incredible amounts of boredom\n")
+
+  time.sleep(1)
+
+  lod = lod + 1
+  if lod == 1:
+    achieve = achieve + 1
+    time.sleep(.5)
+    print("\033[0;33;40mACHIEVEMENT UNLOCK: Visit the Most Boring City in the World\033[0;37;40m")
+      
+    input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+      
+  return (lod,achieve)
