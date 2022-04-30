@@ -1,0 +1,33 @@
+import replit
+import time
+import sys
+from boss import *
+
+
+def telaviv(strength,armor,boss2,achieve,health,rm):
+  print("\033[0;37;40mYou go to Tel Aviv")
+  time.sleep(1)
+  print("\nJoaquin tries to stop a bank robbery...")
+  input("\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to continue")
+  
+#---------BOSS FIGHT---------#
+  boss = 50
+  low = 4
+  high = 9
+  name = "\033[0;34;40mIsraeli Bank Robber"
+  diff = "\033[0;34;40m(Difficulty: 2)"
+  victory = bossfight(boss,name,diff,health,strength,armor,low,high)
+  if victory == 1:
+    boss2 = boss2 + 1
+    if boss2 == 1:
+      achieve = achieve + 1
+      print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Beat Boss #2")
+      time.sleep(2.5)
+    rm = rm + 1
+    if rm == 1:
+      print("\033[0;36;40m\nITEM OBTAIN: Robber's Mask")
+      time.sleep(2.5)
+      
+  input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+    
+  return(boss2,achieve,rm)
