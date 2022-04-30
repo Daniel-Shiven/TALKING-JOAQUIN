@@ -1,0 +1,59 @@
+import time
+import replit
+from random import *
+
+def taco(horse,achieve,bb,qs):
+
+  while 0 == 0:
+    replit.clear()
+    print("\033[0;37;40mYou look at the Tacobell menu:")
+    print("\033[0;34;40m(1) - \033[0;37;40mBig Belly Burrito \n\033[0;34;40m(2) - \033[0;37;40mCute Quesadilla \n\033[0;34;40m(3) - \033[0;37;40mSupreme Taco Wrap \n\033[0;34;40m(4) - \033[0;37;40mCool")
+    answer = input("\033[0;37;40mWhat food do you want?\033[0;34;40m ")
+    
+    #-----Big Belly Burrito-----#
+    if answer == "1":
+      bb = bb + 1
+      if bb == 1:
+        print("\033[0;36;40m\nITEM OBTAIN: Big Belly Armor!")
+        time.sleep(2)
+      say1 = randint(1,4)
+      break
+      
+    #-----Quesadilla-----#
+    elif answer == "2":
+      qs = qs + 1
+      if qs == 1:
+        print("\033[0;36;40m\nITEM OBTAIN: Quesadilla Sword!")
+        time.sleep(2)
+      say1 = randint(1,4)
+      break
+      
+    #-----Supreme Taco-----#
+    elif answer == "3":
+      say1 = randint(1,4)
+      break
+      
+    #-----Quesadilla-----#
+    elif answer == "4":
+      say1 = 2
+      break
+  
+  
+  if say1 == 2:
+    print("\033[0;37;40m\nThe cool food didn't have horse DNA and Joaquin survived!")
+    
+    horse = horse + 1
+    if horse == 1:
+      achieve = achieve + 1
+      print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Surviving Tacobell")
+      time.sleep(2)
+    else:
+      time.sleep(1)
+  else:
+    print("\033[0;37;40m\nThe food had horse DNA and you were poisoned :(")
+    time.sleep(1.5)
+    print("\nMaybe you should eat something cooler next time")
+    time.sleep(.5)
+  input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER] \033[0;37;40mto continue")
+  return(horse,achieve,bb,qs)
+  
