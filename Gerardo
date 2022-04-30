@@ -1,0 +1,33 @@
+import replit
+import time
+import sys
+from boss import *
+
+
+def gerardo(strength,armor,boss5,achieve,health,cs,ca):
+  
+#---------BOSS FIGHT---------#
+  boss = 100
+  low = 7
+  high = 10
+  name = "\033[0;34;40mGERARDO"
+  diff = "\033[0;34;40m(Difficulty: 5)"
+  victory = bossfight(boss,name,diff,health,strength,armor,low,high)
+  if victory == 1:
+    boss5 = boss5 + 1
+    if boss5 == 1:
+      achieve = achieve + 1
+      print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Beat Boss #5")
+      time.sleep(2.5)
+    ca = ca + 1
+    if ca == 1:
+      print("\033[0;36;40m\nITEM OBTAIN: CHENGUS ARMOR")
+      time.sleep(2.5)
+    cs = cs + 1
+    if cs == 1:
+      print("\033[0;36;40m\nITEM OBTAIN: CHENGUS SLAYER")
+      time.sleep(2.5)
+      
+  input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+    
+  return(boss5,achieve,cs,ca)
