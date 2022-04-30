@@ -1,0 +1,49 @@
+import time
+from random import *
+from boss import *
+
+def popeye(strength,armor,johncena,popeyes,achieve,health,jc):
+  print("\033[0;37;40mYou took Joaquin to a Popeyes!")
+  time.sleep(1)
+
+  if johncena != 0:
+    print("\nJoaquin walks in peacefully and is fed a chicken sandwich!")
+    time.sleep(1)
+    popeyes = popeyes + 1
+    if popeyes == 1:
+      achieve = achieve + 1
+      print("\033[0;33;40m\nACHIEVEMENT UNLOCK: A Peaceful Visit to Popeyes\n\033[0;37;40m")
+
+    input("Press \033[0;34;40m[ENTER]\033[0;37;40m to continue")
+      
+  else:
+    print("\nJoaquin sees a chicken sandwich")
+    time.sleep(1)
+    print("\nSomeone takes the sandwich before him...")
+    time.sleep(1)
+    print("\nJoaquin punches him")
+    time.sleep(1)
+    print("\nThe guy turns around")
+    time.sleep(1)
+    print("\nIt's John Cena")
+
+    input("\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to continue")
+    boss = 125
+    low = 6
+    high = 10
+    name = "\033[0;36;40mJohn Cena\033[0;37;40m"
+    diff = "\033[0;36;40m(Difficulty: 4)\033[0;37;40m"
+    victory = bossfight(boss,name,diff,health,strength,armor,low,high)
+    if victory == 1:
+      johncena = johncena + 1
+      if johncena == 1:
+        achieve = achieve + 1
+        print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Beat Boss #4")
+        time.sleep(2.5)
+      jc = jc + 1
+      if jc == 1:
+        print("\033[0;36;40m\nITEM OBTAIN: John Cena's Biceps!")
+        time.sleep(2.5)
+    
+
+  return(popeyes,johncena,achieve,jc)
