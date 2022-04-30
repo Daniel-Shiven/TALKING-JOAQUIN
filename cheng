@@ -1,0 +1,25 @@
+import replit
+import time
+import sys
+from boss import *
+
+
+def cheng(strength,armor,bos6,achieve,health):
+  
+#---------BOSS FIGHT---------#
+  boss = 250
+  low = 10
+  high = 15
+  name = "\033[0;34;40mDAT BOI CHENGUS"
+  diff = "\033[0;34;40m(Difficulty: 7)"
+  victory = bossfight(boss,name,diff,health,strength,armor,low,high)
+  if victory == 1:
+    boss6 = boss6 + 1
+    if boss6 == 1:
+      achieve = achieve + 1
+      print("\033[0;33;40m\nACHIEVEMENT UNLOCK: Beat Dat Boi Chengus")
+      time.sleep(2.5)
+      
+  input("\033[0;37;40m\n\nPress \033[0;34;40m[ENTER]\033[0;37;40m to go back home")
+    
+  return(boss6,achieve)
